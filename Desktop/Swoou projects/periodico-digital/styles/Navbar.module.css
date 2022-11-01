@@ -1,0 +1,9 @@
+.header {
+    width: 100%;
+    color: white;
+    background-color: brown;
+    border-bottom: 10px solid #007484;
+}
+.header :nth-child(n) {
+    margin: 10px;
+}
