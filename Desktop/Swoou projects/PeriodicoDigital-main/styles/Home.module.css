@@ -1,0 +1,253 @@
+.container {
+  background: linear-gradient(0.25turn, #838383, #ffffff, #ffffff, #ffffff, #ffffff, #838383);}
+.video {
+  width: 60%;
+}
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.introBanner > :nth-child(1) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.header > :nth-child(2) {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.containerLogout {
+  width: 100%;
+  background-color: brown;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 10px solid #007484;
+}
+.containerLogout :nth-child(1) {
+  color: white;
+}
+.containerLogout > :nth-child(2) {
+  display: block;
+  width: 200px;
+}
+.portada {
+  display: flex;
+  justify-content: space-around;
+}
+.bannerIntroContainer {
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  background-color: rgb(127, 180, 255);
+}
+.bannerIntroIMG {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.inputFile {
+  display: none;
+}
+.label{
+  width: 33%;
+  color: white;
+  padding: 5px 0;
+  margin: 5px 0;
+  background-color: brown;
+  border: 1px solid brown;
+  border-radius: 10px;
+  text-align: center;
+  transition-property: all;
+  transition-duration: .4s;
+}
+
+.label:hover {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid brown;
+  color: brown;
+}
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.socialMedia > :nth-child(1) {
+  font-weight: bold;
+  font-size: 24px;
+}
+.socialMediaIcons {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.socialMediaIcons > :nth-child(n) {
+  display: inline-block;
+  height: auto;
+  width: 35px;
+  padding: 5px;
+}
+.main {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  margin: 0 15%;
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  width: 100%;
+  margin: 5px 0;
+}
+.gridOne {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+}
+.gridOne > :nth-child(n) {
+  width: 100%;
+}
+.gridOne > :nth-child(1){
+	grid-column: 1/2;
+	grid-row: 1/3;
+}
+
+.gridOne > :nth-child(2){
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+.gridOne > :nth-child(3){
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+.gridOne > :nth-child(4){
+	grid-column: 3/4;
+	grid-row: 1/3;
+}
+
+.gridTwo {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+
+}
+.gridTwo > :nth-child(n) {
+  width: 100%;
+}
+.gridThree {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+
+}
+.gridThree > :nth-child(n) {
+  width: 100%;
+}
+
+.gridTwo > :nth-child(5){
+	grid-column: 3/4;
+	grid-row: 1/3;
+}
+.containerSubtitle {
+  display: inline-block;
+  width: 60%;
+  border-bottom: 5px solid #007484;
+  margin-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 35px;
+  width: 100%;
+  height: 70vh;
+  background-color: black;
+}
+
+
+
+
+
+
+.footer {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+}
+.footer h5 {
+  background: linear-gradient(0.25turn, brown, black);
+  padding: 3px 10px;
+}
+.footer > :nth-child(n) {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  padding: 10px 40px;
+}
+
+
+
+
+
+@media (max-width: 750px) {
+  .main {
+    margin: 0;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .gridOne {
+    display: flex;
+    flex-direction: column;
+  }
+  .gridTwo {
+    display: flex;
+    flex-direction: column;
+  }
+  .gridThree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerSubtitle {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 5px solid #007484;
+    margin-bottom: 10px;
+  }
+  .footer {
+    min-height: 100vh;
+    background-color: black;
+  }
+  .introBanner > :nth-child(1) {
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+

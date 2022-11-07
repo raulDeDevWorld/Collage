@@ -1,0 +1,31 @@
+.header {
+    width: 100%;
+    color: white;
+    background-color: brown;
+    border-bottom: 10px solid #007484;
+}
+.nav {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav > :nth-child(n) {
+    margin: 10px;
+}
+
+@media (max-width: 750px) {
+    .header {
+        background-color: rgb(187, 187, 187);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+.header nav {
+    background-color: brown;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
