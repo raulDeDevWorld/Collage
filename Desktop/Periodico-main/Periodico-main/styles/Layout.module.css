@@ -32,7 +32,6 @@
         position: relative;
         display: grid;
         grid-template-columns: 0vw 1fr 0vw;
-        overflow-y: scroll;
         min-height: 100vh;
     }
   
