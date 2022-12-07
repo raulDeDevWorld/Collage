@@ -81,11 +81,11 @@ function Home() {
     <Layout>
       <div className={styles.main}>
         <Header></Header>
-        {showImg == true && <div className={styles.gridIMG}>{Object.values(postsIMG).map((i, index) => {
-          return (
+        {/* {showImg == true && <div className={styles.gridIMG}>{Object.values(postsIMG).map((i, index) => 
+
             <img src={i} key={index} alt="Vercel Logo" />
-          )
-        })}</div>}
+
+        )}</div>} */}
         <Section topic="Inicio" publicView={true} color=''></Section>
         <Section topic="Sociedad" publicView={true} color=''></Section>
         <Section topic="Salud" publicView={true} color=''></Section>

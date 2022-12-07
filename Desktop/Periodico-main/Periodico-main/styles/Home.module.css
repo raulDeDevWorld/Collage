@@ -101,9 +101,14 @@ background-image: black;
   
 }
 
-.banner {
-  width: 100%;
-  margin: 5px 0;
+.gridIMG {
+  width: 70vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.gridIMG :nth-child(n) {
+
+  width: 100px;
 }
 
 
