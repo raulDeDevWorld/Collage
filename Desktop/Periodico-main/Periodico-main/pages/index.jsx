@@ -76,7 +76,7 @@ function Home() {
     }, 2000)
 
   }, [periodicoPDF == "User" ? '' : periodicoPDF])
-  console.log(success)
+  console.log(success)     
   return (
     <Layout>
       <div className={styles.main}>
