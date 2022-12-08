@@ -1,0 +1,173 @@
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.require {
+    position: relative;
+    height: 15px;
+    top: -5px;
+    color: brown;
+    margin: 0;
+    padding: 0;
+}
+
+.green {
+    color: green
+}
+
+.formSelectAdds {
+    width: 32.5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formSelectPost {
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.previewIMG {
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+
+}
+
+.previewIMGBanner {
+    object-fit: cover;
+    margin-bottom: 2px;
+    height: 33px;
+    width: 150px;
+}
+
+
+
+.formInputs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.formInputsAdmin {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.formInputs form {
+    width: 33%;
+    position: relative;
+    margin: 10px 5px;
+}
+
+
+
+.formInputs input {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 5px 5px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid brown;
+
+}
+
+.radioInputs {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin-right: 20px
+}
+
+.radioInputs :nth-child(n) {
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.formInputs input::placeholder {
+    color: brown
+}
+
+.formInputs label {
+    display: inline-block;
+    width: 100%;
+    padding: 2px 0;
+    margin-bottom: 5px;
+}
+
+
+
+.selectLebel {
+    padding: 0px 0;
+    border-radius: 10px;
+}
+
+.select {
+    padding: 5px 0;
+    border-radius: 1px;
+    text-align: center;
+    border: 1px solid brown;
+    color: brown;
+}
+
+.select option {
+    color: rgb(255, 255, 255);
+    background-color: brown;
+}
+
+.label {
+    color: white;
+    padding: 5px 0;
+    background-color: brown;
+    border: 1px solid brown;
+    border-radius: 10px;
+    text-align: center;
+    transition-property: all;
+    transition-duration: .4s;
+}
+
+.label:hover {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid brown;
+    color: brown;
+}
+
+.inputFile {
+    display: none;
+}
+
+
+.formChecks {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.formChecks label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@media (max-width: 850px) and (orientation: portrait) {
+    .formInputs form {
+        width: 50%;
+        position: relative;
+        margin: 10px 5px;
+    }
+}
