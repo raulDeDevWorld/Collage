@@ -56,7 +56,7 @@ export default function Header(props) {
 
     function handlerClick(url) {
         router.push(url)
-    }
+    }      
     function handlerClickEnlace(i) {
         router.pathname != "/Admin" && router.push("/" + userDB[topic]["Posts"][`PostImage_${i}`])
         router.pathname == "/Admin" && setDataEditor(i)
