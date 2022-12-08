@@ -35,10 +35,11 @@ function Layout({children}) {
     const [periodicoPDF, setPeriodicoPDF] = useState(false);
     const [periodicoPDFEffect, setPeriodicoPDFEffect] = useState(false);
 
-    function handlerClickEnlace(info) {
-        router.pathname != "/Admin" && info.i !== undefined && router.push("/" + userDB[topic]["Posts"][`PostImage_${info.i}`])
-        router.pathname == "/Admin" && setDataEditor(info)
-    }
+    function handlerClickEnlace(data) {
+        router.pathname != "/Admin" && window.open(data.href, data.target)
+        router.pathname == "/Admin" && setDataEditor(data)
+        // console.log(data.href, data.target)
+      }
 
     function handlerClick(url) {
         router.push(url)
