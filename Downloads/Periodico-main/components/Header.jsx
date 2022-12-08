@@ -54,7 +54,7 @@ export default function Header(props) {
         setUserMonthAndYear(`${months[format[1] - 1]}-${format[0]}`)
     }
 
-    function handlerClick(url) {
+    function handlerClick(url) {       
         router.push(url)
     }      
     function handlerClickEnlace(i) {
