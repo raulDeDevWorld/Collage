@@ -1,0 +1,73 @@
+.modal {
+    position: absolute;
+    top: 0;
+    height: auto;
+   min-height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.674);
+    color: rgb(0, 0, 0);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.modal span {
+    cursor: pointer
+}
+
+.modal span {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    width: 50px;
+    color: white;
+    text-align: center;
+    border-radius: 20px 5px 20px 5px;
+    background: linear-gradient(0.25turn, rgb(7, 59, 81), rgb(30, 66, 82), rgb(3, 84, 119));
+}
+
+.modal> :nth-child(1) {
+    position: relative;
+    width: 50%;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.modal th,
+.modal td {
+    padding: 10px;
+}
+
+.banner {
+    border-radius: 30px;
+    overflow: hidden;
+    background: linear-gradient(0.25turn, rgb(7, 59, 81), rgb(30, 66, 82), rgb(3, 84, 119));
+    color: white;
+
+}
+
+.buttonP {
+    border: 1px solid orange;
+    border-radius: 20px;
+    color: orange;
+    width: 160px;
+    margin-top: 5px;
+}
+
+.modal p {
+    text-align: end;
+}
+
+.modal img {
+    width: auto;
+    height: 250px;
+    object-position: cover;
+}
+
+.button {
+    background: linear-gradient(0.25turn, rgb(7, 59, 81), rgb(30, 66, 82), rgb(3, 84, 119));
+}

@@ -1,0 +1,100 @@
+.my-flex-solicitud {
+  display: flex;
+  flex-wrap: wrap;
+}
+.my-flex-solicitud > :nth-child(n) {
+  width: 45%;
+  height: 40px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+.my-flex-solicitud > :nth-child(1) {
+justify-content: space-between;
+}
+.my-flex-solicitud > :nth-child(10) {
+  justify-content: space-around;
+}
+.my-flex-solicitud > :nth-child(20) {
+  justify-content: space-around;
+}
+
+.card:hover {
+  box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273) !important;
+  transition: all 0.7s linear;
+}
+
+.card-body {
+  padding: 2rem 0 !important;
+}
+
+.card-text {
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.card-img-top {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.card-img-top:hover {
+  transform: scale(1.8);
+}
+
+.Image1{
+  max-width: 100%;
+    height: auto;
+    left: 0px;
+    right: 0px;
+}
+.Col1{
+  width:70%;
+}
+.Col2 {
+  width: 70%;
+  height: max-content;
+}
+.rowclass1 {
+ display: flex;
+ width: 100%;
+ margin: auto;
+}
+.solicitudimg1{
+  width: auto;
+  height: 25em;
+  
+}
+.Col1Send {
+  width:60%;
+}
+.Col2Send {
+  width: 40%;
+  height: max-content;
+}
+.rowclass {
+ display: flex;
+ width: 100%;
+ margin: auto;
+}
+.Col1Succeeded {
+  width:50%;
+}
+.Col2Succeeded {
+  width: 50%;
+  height: max-content;
+}
+.solicitudimg2{
+  width: auto;
+  height: 22em;
+  
+}
+.solicitudimg3{
+  width: auto;
+  height: 25em;
+  
+}
