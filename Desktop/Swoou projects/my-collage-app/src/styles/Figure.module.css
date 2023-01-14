@@ -1,0 +1,156 @@
+.labelFileFigure {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(219, 219, 219);
+    padding: 5px 15px;
+    border-radius: 3px;
+
+    transition-property: all;
+    transition-duration: .5s;
+    border: none;
+    background-color: rgba(255, 0, 0, 0);
+    z-index: 1000;
+
+}
+
+
+
+.inputFileFigure {
+    display: none;
+}
+
+
+.heart {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    position: absolute;
+    background-image: url('../public/heart.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+.heartRotate {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    position: absolute;
+    background-image: url('../public/heart.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px;
+    margin-bottom: 50px;
+    transform: rotate(90deg);
+}
+.container39 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container39 > :nth-child(n) {
+    position: a;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container39  :nth-child(n) {
+    margin: 0;
+}
+.labelFileFigureAbsolute {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000000;
+}
+.container43 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container43 > :nth-child(n) {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container43 :nth-child(n) {
+    margin: 0;
+}
+.image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+@media (max-width: 850px) {
+
+    .heart {
+        height: 25px;
+        width: 25px;
+        text-align: center;
+        position: absolute;
+        background-image: url('../public/heart.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 5px;
+        margin-bottom: 50px;
+    }
+    .heartRotate {
+        height: 25px;
+        width: 25px;
+        text-align: center;
+        position: absolute;
+        background-image: url('../public/heart.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 5px;
+        margin-bottom: 50px;
+        transform: rotate(90deg);
+    }
+}

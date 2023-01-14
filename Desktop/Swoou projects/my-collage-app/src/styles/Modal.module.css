@@ -1,0 +1,113 @@
+.modalContainer {
+  position: fixed;
+  width: 100%;
+  min-width: 280px;
+  min-height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 10000000;
+  background-color: rgba(0, 0, 0, 0.616);
+}
+
+.contBlue {
+  position: relative;
+  background-image: url('../public/fondo-web.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+  max-width: 400px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 85%;
+  min-width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+  z-index: 100000000;
+  box-shadow: 0 0 2px 2px #E51F22;
+
+  
+
+}
+.x {
+  position: absolute;
+  padding: 10px 15px;
+  border-radius: 15px 10px;
+  right: -15px;
+  top: -15px;
+  background-color: black;
+  color: #ff496a;
+  cursor: pointer;
+  animation: animation 5s infinite;
+
+}
+
+.modalBoot {
+  width: auto;
+  height: 150px;
+ border-radius: 150px;
+ box-shadow: 0 0 2px 2px #E51F22;
+
+}
+
+ .textModal {
+  background-color: black;
+  color: #ff496a;
+  padding: 5px;
+  width: 85vw;
+  max-width: 400px;
+  min-width: 250px;
+
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-align: center;
+  animation: animation 5s infinite;
+}
+
+
+
+@keyframes animation {
+  0% {
+    color: #ff496a ;
+  }
+
+  50% {
+    color: #ff6d49 ;
+
+  }
+  50% {
+    color: #bd5758;
+  }
+  100% {
+    color: #ff496a ;
+  }
+}
+
+@media (max-width: 850px) {
+  .modalContainer {
+    position: fixed;
+    width: 100%;
+    min-width: 280px;
+    min-height: 100vh;
+    top: 85px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    min-width: 360px;
+  }
+}

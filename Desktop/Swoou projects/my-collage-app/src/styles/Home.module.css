@@ -1,0 +1,326 @@
+.container {
+  position: relative;
+  /* background-color: blue; */
+  padding-top: 90px;
+  padding-bottom: 70px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* centrado vertical */
+  justify-content: center;
+  /* centrado-horizontal */
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+
+.activator {
+  position: fixed;
+  top: 80px;
+  right: 15px;
+  background-color: rgb(27, 27, 27);
+  color: #ff496a;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 35px;
+  animation: animation 4s infinite ease-in-out;
+  z-index: 1000;
+}
+
+/* ----------------- Collage Albun ----------------- */
+
+.grid {
+  position: relative;
+  box-sizing: border-box;
+  padding: 1cm;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px 1px rgb(175, 175, 175);
+  width: 90vw;
+  max-width: 215mm;
+  height: auto;
+  z-index: 100;
+
+}
+
+.separator {
+  background-color: #b9b9b9;
+  height: 1px;
+  width: 100%;
+  margin: 5mm 0;
+
+}
+
+.figureOne, .figureTwo, .figureThree, .figureFour, .figureFive {
+  box-sizing: border-box;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1.5mm;
+
+  border: 2mm solid rgb(229, 229, 229);
+
+  background-color: #525252;
+
+}
+
+.figureOne {
+  height: 8cm;
+  width: 6cm;
+}
+
+.figureTwo {
+  height: 8.3cm;
+  width: 6.3cm;
+}
+
+.figureThree {
+  position: relative;
+  height: 12cm;
+  width: 16cm;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figureFour {
+  position: relative;
+  height: 12cm;
+  width: 8cm;
+  position: relative;
+  margin-left: auto;
+}
+.figureFive {
+  position: relative;
+  height: 12cm;
+  width: 8cm;
+  position: relative;
+  margin-right: auto;
+}
+.void {
+  box-sizing: border-box;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: .5mm;
+  border: 2mm solid transparent;
+
+  height: 8cm;
+  width: 6cm;
+}
+
+.figureOne:hover, .figureTwo:hover, .figureThree:hover, .figureFour:hover, .figureFive:hover {
+  transition-property: all;
+  transition-duration: .5s;
+  background-color: rgb(54, 46, 46);
+}
+
+.figureOneIMGRotate, .figureTwoIMGRotate, .figureFourIMGRotate  {
+  position: absolute;                                                                                                      
+  object-fit: cover;  
+  border: 2mm solid transparent;
+  transform: rotate(90deg);
+}
+
+.figureOneIMGRotate{
+  height: 60mm;
+  width: 80mm;
+}
+
+.figureTwoIMGRotate {
+  height: 63mm;
+  width: 83mm;
+}
+
+.figureFourIMGRotate {
+  height: 80mm;
+  width: 120mm;
+}
+
+.qr {
+  position: relative;
+  box-sizing: content-box;
+  padding: 2mm;
+  height: 3.5cm;
+  width: 3.5cm;
+  background-color: transparent;
+  border: 1px solid rgb(229, 229, 229);
+}
+
+.inputQR  {
+  width: 100%;
+}
+
+/* ----------------- Modal -----------------  */
+
+.formActive {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.buttonsContainer {
+  margin: 5px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.codeActive {
+  animation: animation 4s infinite ease-in-out;
+  text-align: center;
+  background-color: #000000;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+
+
+@keyframes animation {
+  0% {
+    color: #ff496a;
+  }
+
+  50% {
+    color: #ff6d49;
+
+  }
+
+  50% {
+    color: #ffb049;
+
+  }
+
+  100% {
+    color: #ff496a;
+
+  }
+}
+
+/* --------------- float button --------------- */
+.pluss {
+  cursor: pointer;
+  position: fixed;
+  padding: 0px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  bottom: 15px;
+  right: 15px;
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  color: #DE0322;
+  border: none;
+  transition: .3s all;
+  font-size: 15px;
+  z-index: 1000000;
+
+}
+
+.whatsAppLink {
+  text-decoration: underline;
+}
+@media (max-width: 850px) {
+  .container {
+    position: relative;
+    /* background-color: blue; */
+    padding-top: 70px;
+  }
+
+  .activator {
+    position: fixed;
+    top: 60px;
+    right: 10px;
+  }
+  .grid {
+    padding: 2vw;
+    min-width: 100vw;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 11px;
+
+  }
+
+  .figureOne, .figureTwo, .figureThree, .figureFour, .figureFive {
+    border: 1vw solid rgb(229, 229, 229);
+    margin: .5mm;
+    background-color: rgba(0, 0, 0, 0.546);
+
+  }
+  
+  .figureOne {
+    height: 40vw;
+    width: 30vw;
+  }
+  
+  .figureTwo {
+    height: 41.5vw;
+    width: 31.5vw;
+  }
+  
+  .figureThree {
+    height: 60vw;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .figureFour {
+    height: 60vw;
+    width: 40vw;
+    margin-left: auto;
+  }
+  .figureFive {
+    height: 60vw;
+    width: 40vw;
+    margin-right: auto;
+  }
+
+  .void {
+    border: 1vw solid transparent;
+    margin: .5mm;
+  
+    height: 40vw;
+    width: 30vw;
+  }
+  .figureOneIMGRotate, .figureTwoIMGRotate, .figureFourIMGRotate  {
+    position: absolute;                                                                                                      
+    object-fit: cover;  
+    border: 1vw solid transparent;
+    transform: rotate(90deg);
+  }
+  
+  .figureOneIMGRotate{
+    height: 30vw;
+    width: 40vw;
+  }
+  
+  .figureTwoIMGRotate {
+    height: 31.5vw;
+    width: 41.5vw;
+  }
+  
+  .figureFourIMGRotate {
+    height: 40vw;
+    width: 60vw;
+  }
+  .qr {
+    height: 17.5vw;
+    width: 17.5vw;
+    margin-right: 0;
+  }
+
+}
